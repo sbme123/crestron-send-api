@@ -19,8 +19,21 @@ export default async function handler(req, res) {
     const emailData = {
       CPU1: body.CPU1,
       CPU2: body.CPU2,
+      MEMORYCONFIG: body.MEMORYCONFIG,
+      MEMORYCAPACITY: body.MEMORYCAPACITY,
+      M2DRIVES: body.M2DRIVES,
+      TYPEOFDRIVE: body.TYPEOFDRIVE,
+      NUMBEROFDRIVES: body.NUMBEROFDRIVES,
+      STORAGEDRIVESIZE: body.STORAGEDRIVESIZE,
+      RAIDREQUIRED: body.RAIDREQUIRED,
+      EXTERNALHBA: body.EXTERNALHBA,
+      NETWORK: body.NETWORK,
+      GPU: body.GPU,
       NAME: body.NAME,
       EMAIL: body.EMAIL,
+      COMPANY: body.COMPANY,
+      NUMBER: body.NUMBER,
+
     };
 
     const emailMessage = {
