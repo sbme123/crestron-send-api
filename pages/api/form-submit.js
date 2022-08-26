@@ -17,24 +17,23 @@ export default async function handler(req, res) {
     // Create object to send to EmailJs
 
     const emailData = {
-      CPU1: body.CPU1,
-      CPU2: body.CPU2,
-      MEMORYCONFIG: body.MEMORYCONFIG,
-      MEMORYCAPACITY: body.MEMORYCAPACITY,
-      M2DRIVES: body.M2DRIVES,
-      BOOTDRIVES: body.BOOTDRIVES,
-      TYPEOFDRIVE: body.TYPEOFDRIVE,
-      NUMBEROFDRIVES: body.NUMBEROFDRIVES,
-      STORAGEDRIVESIZE: body.STORAGEDRIVESIZE,
-      RAIDREQUIRED: body.RAIDREQUIRED,
-      EXTERNALHBA: body.EXTERNALHBA,
-      NETWORK: body.NETWORK,
-      GPU: body.GPU,
-      NAME: body.NAME,
-      EMAIL: body.EMAIL,
-      COMPANY: body.COMPANY,
-      NUMBER: body.NUMBER,
-
+      CPU1: body.CPU1 || "",
+      CPU2: body.CPU2 || "",
+      MEMORYCONFIG: body.MEMORYCONFIG || "",
+      MEMORYCAPACITY: body.MEMORYCAPACITY || "",
+      M2DRIVES: body.M2DRIVES || "",
+      BOOTDRIVES: body.BOOTDRIVES || "",
+      TYPEOFDRIVE: body.TYPEOFDRIVE || "",
+      NUMBEROFDRIVES: body.NUMBEROFDRIVES || "",
+      STORAGEDRIVESIZE: body.STORAGEDRIVESIZE || "",
+      RAIDREQUIRED: body.RAIDREQUIRED || "",
+      EXTERNALHBA: body.EXTERNALHBA || "",
+      NETWORK: body.NETWORK || "",
+      GPU: body.GPU || "",
+      NAME: body.NAME || "",
+      EMAIL: body.EMAIL || "",
+      COMPANY: body.COMPANY || "",
+      NUMBER: body.NUMBER || "",
     };
 
     const emailMessage = {
