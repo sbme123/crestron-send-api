@@ -17,6 +17,7 @@ export default async function handler(req, res) {
     // Create object to send to EmailJs
 
     const emailData = {
+      SERVERNAME: body.SERVERNAME || "",
       CPU1: body.CPU1 || "",
       CPU2: body.CPU2 || "",
       MEMORYCONFIG: body.MEMORYCONFIG || "",
