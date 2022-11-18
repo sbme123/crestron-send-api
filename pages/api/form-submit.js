@@ -18,8 +18,20 @@ export default async function handler(req, res) {
 
     const emailData = {
       // ROOMNAME: body.ROOMNAME || "",
+      NAME: body.NAME || "",
+      EMAIL: body.EMAIL || "",
+      COMPANY: body.COMPANY || "",
+      NUMBER: body.NUMBER || "",
+
+      ROOMNAME: body.ROOMNAME || "",
       AUDIOPREFERENCE: body.AUDIOPREFERENCE || "",
+      DISPLAYOPTIONS: body.DISPLAYOPTIONS || "",
       WALLMOUNT: body.WALLMOUNT || "",
+      TROLLYMOUNT: body.TROLLYMOUNT || "",
+      ROOMBOOKINGS: body.ROOMBOOKINGS || "",
+      FLEXCARE: body.FLEXCARE || "",
+      XIOCLOUD: body.XIOCLOUD || "",
+      ROOMLICENSE: body.ROOMLICENSE || "",
     };
 
     const emailMessage = {
