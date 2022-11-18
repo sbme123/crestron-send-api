@@ -22,7 +22,6 @@ export default async function handler(req, res) {
       EMAIL: body.EMAIL || "",
       COMPANY: body.COMPANY || "",
       NUMBER: body.NUMBER || "",
-
       ROOMNAME: body.ROOMNAME || "",
       AUDIOPREFERENCE: body.AUDIOPREFERENCE || "",
       DISPLAYOPTIONS: body.DISPLAYOPTIONS || "",
