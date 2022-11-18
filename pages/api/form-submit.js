@@ -17,7 +17,7 @@ export default async function handler(req, res) {
     // Create object to send to EmailJs
 
     const emailData = {
-      ROOMNAME: body.ROOMNAME || "",
+      // ROOMNAME: body.ROOMNAME || "",
       AUDIOPREFERENCE: body.AUDIOPREFERENCE || "",
       WALLMOUNT: body.WALLMOUNT || "",
     };
@@ -25,7 +25,7 @@ export default async function handler(req, res) {
     const emailMessage = {
       to: "simonb@weareplaster.com",
       from: "noreply@weareplaster.com",
-      subject: "New Selecta Form Submission",
+      subject: "New Config Form Submission",
       template_id: "d-918cf9c532064ffbbf9cffa654cba1c1",
       dynamic_template_data: {
         ...emailData,
