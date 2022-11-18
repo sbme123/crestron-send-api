@@ -38,7 +38,7 @@ export default async function handler(req, res) {
     };
 
     const emailMessage = {
-      to: "gccsolutionsfactory@techdata.com",
+      to: "bob-emea@tdsynnex.com",
       from: "noreply@weareplaster.com",
       subject: "New Selecta Form Submission",
       template_id: "d-1344acf1237b43bbbb5cd62f2e0df646",
