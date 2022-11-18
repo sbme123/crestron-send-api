@@ -17,31 +17,16 @@ export default async function handler(req, res) {
     // Create object to send to EmailJs
 
     const emailData = {
-      SERVERNAME: body.SERVERNAME || "",
-      CPU1: body.CPU1 || "",
-      CPU2: body.CPU2 || "",
-      MEMORYCONFIG: body.MEMORYCONFIG || "",
-      MEMORYCAPACITY: body.MEMORYCAPACITY || "",
-      M2DRIVES: body.M2DRIVES || "",
-      BOOTDRIVES: body.BOOTDRIVES || "",
-      TYPEOFDRIVE: body.TYPEOFDRIVE || "",
-      NUMBEROFDRIVES: body.NUMBEROFDRIVES || "",
-      STORAGEDRIVESIZE: body.STORAGEDRIVESIZE || "",
-      RAIDREQUIRED: body.RAIDREQUIRED || "",
-      EXTERNALHBA: body.EXTERNALHBA || "",
-      NETWORK: body.NETWORK || "",
-      GPU: body.GPU || "",
-      NAME: body.NAME || "",
-      EMAIL: body.EMAIL || "",
-      COMPANY: body.COMPANY || "",
-      NUMBER: body.NUMBER || "",
+      ROOMNAME: body.ROOMNAME || "",
+      AUDIOPREFERENCE: body.AUDIOPREFERENCE || "",
+      WALLMOUNT: body.WALLMOUNT || "",
     };
 
     const emailMessage = {
-      to: "bob-emea@tdsynnex.com",
+      to: "simonb@weareplaster.com",
       from: "noreply@weareplaster.com",
       subject: "New Selecta Form Submission",
-      template_id: "d-1344acf1237b43bbbb5cd62f2e0df646",
+      template_id: "d-918cf9c532064ffbbf9cffa654cba1c1",
       dynamic_template_data: {
         ...emailData,
       },
