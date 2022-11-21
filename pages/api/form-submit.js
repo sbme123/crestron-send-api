@@ -26,7 +26,7 @@ export default async function handler(req, res) {
       AUDIOPREFERENCE: body.AUDIOPREFERENCE || "",
       DISPLAYOPTIONS: body.DISPLAYOPTIONS || "",
       WALLMOUNT: body.WALLMOUNT || "",
-      TROLLYMOUNT: body.TROLLYMOUNT || "",
+      // TROLLYMOUNT: body.TROLLYMOUNT || "",
       ROOMBOOKINGS: body.ROOMBOOKINGS || "",
       FLEXCARE: body.FLEXCARE || "",
       XIOCLOUD: body.XIOCLOUD || "",
