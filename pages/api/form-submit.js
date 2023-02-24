@@ -34,7 +34,7 @@ export default async function handler(req, res) {
     };
 
     const emailMessage = {
-      to: "simonb@weareplaster.com",
+      to: "sven.berckmoes@tdsynnex.com",
       from: "noreply@weareplaster.com",
       subject: "New Config Form Submission",
       template_id: "d-918cf9c532064ffbbf9cffa654cba1c1",
